@@ -40,4 +40,4 @@ To start the application locally, you need to
 - run the client by using npm run start on another terminal<br/>
 
 ## Deployed page: 
-https://serene-journey-84509.herokuapp.com/saved
+https://serene-journey-84509.herokuapp.com/
