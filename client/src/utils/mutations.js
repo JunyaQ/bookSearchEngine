@@ -9,7 +9,7 @@ export const LOGIN_USER = gql`
         # type Auth: token: ID!
         _id
         username
-        email
+        # email
       }
     }
   }
