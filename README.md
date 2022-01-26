@@ -38,3 +38,6 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 To start the application locally, you need to 
 - run the server by using npm run watch on one terminal, <br/>
 - run the client by using npm run start on another terminal<br/>
+
+## Deployed page: 
+https://serene-journey-84509.herokuapp.com/
