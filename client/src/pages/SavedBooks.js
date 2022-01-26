@@ -12,10 +12,10 @@ import { REMOVE_BOOK } from "../utils/mutations";
 const SavedBooks = () => {
   //useQuery and getme to load and ave to userdata
   const {loading,data} = useQuery(GET_ME);
-  const{removeBook} = useMutation(REMOVE_BOOK);// hook to execute REMOVE_BOOKS mutation in the handleDeleteBook()
+  const [removeBook] = useMutation(REMOVE_BOOK);// hook to execute REMOVE_BOOKS mutation in the handleDeleteBook()
 
   const userData = data?.me||{};
-  //const userDataLength = Object.keys(userData).length;
+ // const userDataLength = Object.keys(userData).length;
 
   
 
