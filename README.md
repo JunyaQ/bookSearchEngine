@@ -1,4 +1,4 @@
-# bootcamp_challenge21_bookSearchEngine
+# bookSearchEngine
 ## Book Search Engine 
 This is a book search engine and it uses MERN stack and with a React front end, GraphQL API, Apollo Server, MongoDB database, and Node js & Express js server.<br/>
 It uses google book API and will show the result with book cover, title, author, and description (if possible).
