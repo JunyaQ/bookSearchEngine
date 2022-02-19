@@ -9,14 +9,20 @@ const { authMiddleware } = require("./utils/auth");
 const app = express();
 const PORT = process.env.PORT || 3001;
 // add apollo server and schema data
-const server = new ApolloServer({
-  typeDefs,
-  resolvers,
-  context: authMiddleware,
-})
+const startServer = async () => {
+  const server = new ApolloServer({
+    typeDefs,
+    resolvers,
+    context: authMiddleware,
+  });
+  await server.start();
 // add apollo server and exprress as middleware
 server.applyMiddleware({ app });
-app.use(express.urlencoded({ extended: true }));
+
+console.log(`Using graphQL at ${PORT}${server.graphqlPath}`);
+};
+startServer();
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // if we're in production, serve client/build as static assets
