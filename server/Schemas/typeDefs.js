@@ -37,6 +37,14 @@ input savedBook {
     link: String
     authors: [String]
   }
+  input BookInput {
+   authors: [String]
+   description: String!
+   bookId: String!
+   image: String
+   link: String
+   title: String!
+ }
 `;
 
 module.exports = typeDefs;
