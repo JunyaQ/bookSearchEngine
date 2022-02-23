@@ -52,22 +52,19 @@ const SavedBooks = () => {
         </Container>
       </Jumbotron>
       <Container>
-      <div>
-                <p>{`${userData.savedBooks}`}</p>
-                {/* <p>{`${JSON.stringify(userData)}`}</p> */}
-       </div>
-        {/* <h2>
+  
+        <h2>
           {userData.savedBooks.length
             ? `Viewing ${userData.savedBooks.length} saved ${userData.savedBooks.length === 1 ? 'book' : 'books'}:`
             : 'You have no saved books!'}
         </h2>
         <CardColumns>
           {userData.savedBooks.map((book) => {
-            return(
-              <div>
-                <p>{`${userData.savedBooks.image}`}</p>
-              </div>
-            );
+            // return(
+            //   <div>
+            //     <p>{`${userData.savedBooks.image}`}</p>
+            //   </div>
+            // );
             return (
               <Card key={book.bookId} border='dark'>
                 {book.image ? <Card.Img src={book.image} alt={`The cover for ${book.title}`} variant='top' /> : null}
@@ -82,7 +79,7 @@ const SavedBooks = () => {
               </Card>
             );
           })}
-        </CardColumns> */}
+        </CardColumns>
       </Container>
     </>
   );
