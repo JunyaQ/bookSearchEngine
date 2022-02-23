@@ -77,7 +77,6 @@ const SearchBooks = () => {
       console.error(err);
     }
   };
-
   return (
     <>
       <Jumbotron fluid className='text-light bg-dark'>
